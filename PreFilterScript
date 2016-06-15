@@ -1,0 +1,24 @@
+<script>
+  $(document).ready(function() {
+    $("#getMessage").on("click", function() {
+      $.getJSON("/json/img1.json", function(json) {
+        var html = "";
+        json = json.filter(function(val) {
+return (val.id !== 1);
+});
+        json.forEach(function(val) {
+
+          html += "<div class = 'img'>"
+
+          html += "<img src = '" + val.imageLink + "'>"
+
+          html += "</div>"
+
+         });
+
+        $(".message").html(html);
+
+      });
+    });
+  });
+</script>
