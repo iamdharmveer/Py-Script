@@ -1,2 +1,2 @@
 # Py-Script
-Python,JS,Json Script
+Script for Python,Json.
