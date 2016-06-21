@@ -7,5 +7,5 @@ $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + po
 
 </script>
 <div id = "data">
-  <h1 style="color:green">You are here:</h1>
+  <h1 style="color:green">I'm Here:</h1>
 </div>
